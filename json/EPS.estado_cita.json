@@ -1,0 +1,36 @@
+[
+{
+  "_id": {
+    "$oid": "65033fe773d0edc346e5d428"
+  },
+  "estadoCita": "Programada",
+  "codigoEstado": 0
+},
+{
+  "_id": {
+    "$oid": "65033fe773d0edc346e5d429"
+  },
+  "estadoCita": "Confirmada",
+  "codigoEstado": 1
+},
+{
+  "_id": {
+    "$oid": "65033fe773d0edc346e5d42a"
+  },
+  "estadoCita": "En Curso",
+  "codigoEstado": 2
+},
+{
+  "_id": {
+    "$oid": "65033fe773d0edc346e5d42b"
+  },
+  "estadoCita": "Atendida",
+  "codigoEstado": 3
+},
+{
+  "_id": {
+    "$oid": "65033fe773d0edc346e5d42c"
+  },
+  "estadoCita": "Cancelada",
+  "codigoEstado": 4
+}]

@@ -20,6 +20,8 @@ constructor(){
         tipo_documento: '/api/tipoDocs'
     }
 
+    this.middlewares();
+
     this.routes();
     
     this.connectionDB();
@@ -29,6 +31,11 @@ constructor(){
 
     async connectionDB(){
        await dbConnection()
+
+    }
+
+    middlewares(){
+        this.app.use(express.json());
 
     }
 

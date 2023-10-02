@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "6503419073d0edc346e5d42d"
+  },
+  "matriculaProfesional": 123456789,
+  "nombreCompleto": "Carlos Alfonso Machado",
+  "consultorio": "001",
+  "especialidad": "Otorrinolaringología"
+},
+{
+  "_id": {
+    "$oid": "6503419073d0edc346e5d42e"
+  },
+  "matriculaProfesional": 234567890,
+  "nombreCompleto": "Ana María Pérez",
+  "consultorio": "002",
+  "especialidad": "Cardiología"
+},
+{
+  "_id": {
+    "$oid": "6503419073d0edc346e5d42f"
+  },
+  "matriculaProfesional": 345678901,
+  "nombreCompleto": "Luis González",
+  "consultorio": "003",
+  "especialidad": "Dermatología"
+},
+{
+  "_id": {
+    "$oid": "6503419073d0edc346e5d430"
+  },
+  "matriculaProfesional": 456789012,
+  "nombreCompleto": "María José Rodríguez",
+  "consultorio": "004",
+  "especialidad": "Pediatría"
+},
+{
+  "_id": {
+    "$oid": "6503419073d0edc346e5d431"
+  },
+  "matriculaProfesional": 567890123,
+  "nombreCompleto": "Juan Pérez Ramos",
+  "consultorio": "005",
+  "especialidad": "Cirugía General"
+},
+{
+  "_id": {
+    "$oid": "6503419073d0edc346e5d432"
+  },
+  "matriculaProfesional": 678901234,
+  "nombreCompleto": "Elena Sánchez",
+  "consultorio": "006",
+  "especialidad": "Ginecología"
+},
+{
+  "_id": {
+    "$oid": "6503419073d0edc346e5d433"
+  },
+  "matriculaProfesional": 789012345,
+  "nombreCompleto": "Roberto Martínez",
+  "consultorio": "007",
+  "especialidad": "Neurología"
+},
+{
+  "_id": {
+    "$oid": "6503419073d0edc346e5d434"
+  },
+  "matriculaProfesional": 890123456,
+  "nombreCompleto": "Laura Torres",
+  "consultorio": "008",
+  "especialidad": "Oncología"
+},
+{
+  "_id": {
+    "$oid": "6503419073d0edc346e5d435"
+  },
+  "matriculaProfesional": 901234567,
+  "nombreCompleto": "Andrés López",
+  "consultorio": "009",
+  "especialidad": "Endocrinología"
+},
+{
+  "_id": {
+    "$oid": "6503419073d0edc346e5d436"
+  },
+  "matriculaProfesional": 987654321,
+  "nombreCompleto": "Marta González",
+  "consultorio": "010",
+  "especialidad": "Oftalmología"
+}]

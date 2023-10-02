@@ -1,0 +1,148 @@
+[{
+  "_id": {
+    "$oid": "65033e2173d0edc346e5d40f"
+  },
+  "codigo": 1,
+  "fecha": {
+    "$date": "2023-09-20T00:00:00.000Z"
+  },
+  "estadoCita": 1,
+  "medico": 123456789,
+  "datosUsuario": {
+    "$oid": "6503439873d0edc346e5d437"
+  },
+  "consultorioCita": "002"
+},
+{
+  "_id": {
+    "$oid": "65033e2173d0edc346e5d410"
+  },
+  "codigo": 2,
+  "fecha": {
+    "$date": "2023-09-21T00:00:00.000Z"
+  },
+  "estadoCita": 1,
+  "medico": 234567890,
+  "datosUsuario": {
+    "$oid": "6503439873d0edc346e5d438"
+  },
+  "consultorioCita": "004"
+},
+{
+  "_id": {
+    "$oid": "65033e2173d0edc346e5d411"
+  },
+  "codigo": 3,
+  "fecha": {
+    "$date": "2023-09-22T00:00:00.000Z"
+  },
+  "estadoCita": 0,
+  "medico": 234567890,
+  "datosUsuario": {
+    "$oid": "6503439873d0edc346e5d439"
+  },
+  "consultorioCita": "002"
+},
+{
+  "_id": {
+    "$oid": "65033e2173d0edc346e5d412"
+  },
+  "codigo": 4,
+  "fecha": {
+    "$date": "2023-09-23T00:00:00.000Z"
+  },
+  "estadoCita": 1,
+  "medico": 345678901,
+  "datosUsuario": {
+    "$oid": "6503439873d0edc346e5d43a"
+  },
+  "consultorioCita": "006"
+},
+{
+  "_id": {
+    "$oid": "65033e2173d0edc346e5d413"
+  },
+  "codigo": 5,
+  "fecha": {
+    "$date": "2023-09-24T00:00:00.000Z"
+  },
+  "estadoCita": 1,
+  "medico": 456789012,
+  "datosUsuario": {
+    "$oid": "6503439873d0edc346e5d43b"
+  },
+  "consultorioCita": "008"
+},
+{
+  "_id": {
+    "$oid": "65033e2173d0edc346e5d414"
+  },
+  "codigo": 6,
+  "fecha": {
+    "$date": "2023-09-25T00:00:00.000Z"
+  },
+  "estadoCita": 1,
+  "medico": 901234567,
+  "datosUsuario": {
+    "$oid": "6503439873d0edc346e5d43c"
+  },
+  "consultorioCita": "008"
+},
+{
+  "_id": {
+    "$oid": "65033e2173d0edc346e5d415"
+  },
+  "codigo": 7,
+  "fecha": {
+    "$date": "2023-09-26T00:00:00.000Z"
+  },
+  "estadoCita": 1,
+  "medico": 901234567,
+  "datosUsuario": {
+    "$oid": "6503439873d0edc346e5d43d"
+  },
+  "consultorioCita": "008"
+},
+{
+  "_id": {
+    "$oid": "65033e2173d0edc346e5d416"
+  },
+  "codigo": 8,
+  "fecha": {
+    "$date": "2023-09-29T00:00:00.000Z"
+  },
+  "estadoCita": 0,
+  "medico": 678901234,
+  "datosUsuario": {
+    "$oid": "6503439873d0edc346e5d43e"
+  },
+  "consultorioCita": "001"
+},
+{
+  "_id": {
+    "$oid": "65033e2173d0edc346e5d417"
+  },
+  "codigo": 9,
+  "fecha": {
+    "$date": "2023-09-29T00:00:00.000Z"
+  },
+  "estadoCita": 1,
+  "medico": 789012345,
+  "datosUsuario": {
+    "$oid": "6503439873d0edc346e5d438"
+  },
+  "consultorioCita": "007"
+},
+{
+  "_id": {
+    "$oid": "65033e2173d0edc346e5d418"
+  },
+  "codigo": 10,
+  "fecha": {
+    "$date": "2023-09-29T00:00:00.000Z"
+  },
+  "estadoCita": 1,
+  "medico": 123456789,
+  "datosUsuario": "6503439873d0edc346e5d437",
+  "consultorioCita": "005"
+}]

@@ -1,8 +1,9 @@
 const {Router} = require('express');
-const {getNamesAlp} = require('../controllers/usuarios.controllers');
+const {getNamesAlp, nuevoPaciente} = require('../controllers/usuarios.controllers');
 const router = Router();
 
-router.get('/getAlp', getNamesAlp);
+router.get('/getAlp', getNamesAlp)
+.post('/new', nuevoPaciente);
 
 
 module.exports = router;

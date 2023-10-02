@@ -83,6 +83,32 @@ const getDiaEspecifico = async (req, res) => {
   }
 };
 
+const getDiaEspecificoMedico = async (req, res) => {
+  try {
+    const db = client.db(process.env.DB_NAME);
+    const collection = db.collection('cita');
+      
+    const diaEspecifico = new Date("2023-09-20");
+    const medicoEspecifico = 123456789
+  /*   const diaEspecifico = req.body.fecha
+    const medicoEspecifico = req.body.medico
+ */
+  const data = await collection.aggregate([
+                 {
+             $match: {
+               fecha: diaEspecifico,
+               medico: medicoEspecifico
+             }
+           }
+]).toArray();
+
+    res.json(data);
+  } catch (error) {
+    console.error('Error al obtener datos de MongoDB:', error);
+    res.status(500).json({ error: 'Error al obtener datos de MongoDB' });
+  }
+};
+
 const getMedicos = async (req, res) => {
   try {
     const db = client.db(process.env.DB_NAME);
@@ -106,8 +132,115 @@ const getMedicos = async (req, res) => {
   }
 };
 
+const getConsultoriosCita = async (req, res) => {
+  try {
+    const db = client.db(process.env.DB_NAME);
+    const collection = db.collection('cita');
+  
+    const data = await collection.aggregate([{
+
+      $lookup:{
+        from: "consultorio",  
+        localField: "consultorioCita",  
+        foreignField: "codigo", 
+        as: "consultorioCita" 
+      }
+
+    }]).toArray();
+
+    res.json({data});
+  } catch (error) {
+    console.error('Error al obtener datos de MongoDB:', error);
+    res.status(500).json({ error: 'Error al obtener datos de MongoDB' });
+  }
+};
+
+
+const getCitaGenero= async (req, res) => {
+  try {
+    const db = client.db(process.env.DB_NAME);
+    const collection = db.collection('cita');
+  
+    const data = await collection.aggregate([{
+     
+      $lookup:{
+        from: "usuarios",  
+        localField: "datosUsuario",  
+        foreignField: "_id", 
+        as: "datosUsuario" 
+      }
+
+    },{
+
+      $lookup:{
+        from: "estado_cita",  
+        localField: "estadoCita",  
+        foreignField: "codigoEstado", 
+        as: "estadoCita" 
+      }
+
+    }, {
+      $unwind: "$datosUsuario" 
+    }, {
+      $unwind: "$estadoCita" 
+    },
+    { $match:{
+       "estadoCita.estadoCita": "Atendida",
+      "datosUsuario.genero": req.body.query
+      
+       
+    }
+  }
+  ]).toArray();
+
+    res.json({data});
+  } catch (error) {
+    console.error('Error al obtener datos de MongoDB:', error);
+    res.status(500).json({ error: 'Error al obtener datos de MongoDB' });
+  }
+};
+
+const getCitasCanceladas = async (req, res) => {
+  try {
+    const db = client.db(process.env.DB_NAME);
+    const collection = db.collection('cita');
+  
+    const mesEspecifico = req.body.query
+    const data = await collection.aggregate([{
+      $lookup:{
+        from: "medico",  
+        localField: "medico",  
+        foreignField: "matriculaProfesional", 
+        as: "medico" 
+      }
+    },
+    {
+      $match: {
+    
+        $expr: {
+          $eq: [{ $month: '$fecha' }, mesEspecifico],
+        },
+        estadoCita: 4
+        
+      },
+    }
+    ]).toArray();
+
+    res.json({data});
+  } catch (error) {
+    console.error('Error al obtener datos de MongoDB:', error);
+    res.status(500).json({ error: 'Error al obtener datos de MongoDB' });
+  }
+};
+
+
+
   
   
-  module.exports = { getAll, getFechas, getCita, getDiaEspecifico,getMedicos}
+
+
+  
+  
+  module.exports = { getAll, getFechas, getCita, getDiaEspecifico,getMedicos,getDiaEspecificoMedico,getConsultoriosCita,getCitaGenero,getCitasCanceladas}
 
 

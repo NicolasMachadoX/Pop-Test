@@ -45,7 +45,16 @@ const getAll = async (req, res) => {
       const db = client.db(process.env.DB_NAME);
       const collection = db.collection('medico');
     
-      const data = await collection.find().toArray();
+      const data = await collection.aggregate([{
+
+        $lookup:{
+          from: "consultorio",  
+          localField: "consultorio",  
+          foreignField: "codigo", 
+          as: "consultorio" 
+        }
+
+      }]).toArray();
 
       res.json({data});
     } catch (error) {
@@ -53,6 +62,8 @@ const getAll = async (req, res) => {
       res.status(500).json({ error: 'Error al obtener datos de MongoDB' });
     }
   };
+
+  
   
   module.exports = { getAll,getEspecialidad,getConsultorios}
 

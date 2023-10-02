@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "6503439873d0edc346e5d437"
+  },
+  "nombre": "Juan",
+  "segundo_nombre": "Pablo",
+  "primer_apellido": "González",
+  "telefono": "555-123-4567",
+  "direccion": "Calle 123",
+  "email": "juan@example.com",
+  "tipodoc": "C.C",
+  "genero": "Masculino",
+  "acudiente": "Pedro Rodríguez"
+},
+{
+  "_id": {
+    "$oid": "6503439873d0edc346e5d438"
+  },
+  "nombre": "María",
+  "segundo_nombre": "Isabel",
+  "primer_apellido": "López",
+  "telefono": "555-987-6543",
+  "direccion": "Avenida 456",
+  "email": "maria@example.com",
+  "tipodoc": "T.I",
+  "genero": "Femenino",
+  "acudiente": "Laura Pérez"
+},
+{
+  "_id": {
+    "$oid": "6503439873d0edc346e5d439"
+  },
+  "nombre": "Carlos",
+  "segundo_nombre": "Manuel",
+  "primer_apellido": "Ramírez",
+  "telefono": "555-333-3333",
+  "direccion": "Carrera 789",
+  "email": "carlos@example.com",
+  "tipodoc": "D.E",
+  "genero": "Masculino",
+  "acudiente": "Carlos Sánchez"
+},
+{
+  "_id": {
+    "$oid": "6503439873d0edc346e5d43a"
+  },
+  "nombre": "Laura",
+  "segundo_nombre": "Mariana",
+  "primer_apellido": "Fernández",
+  "telefono": "555-444-4444",
+  "direccion": "Avenida Secundaria",
+  "email": "laura@example.com",
+  "tipodoc": "C.C",
+  "genero": "Femenino",
+  "acudiente": "María Gómez"
+},
+{
+  "_id": {
+    "$oid": "6503439873d0edc346e5d43b"
+  },
+  "nombre": "Pedro",
+  "segundo_nombre": "José",
+  "primer_apellido": "López",
+  "telefono": "555-555-5555",
+  "direccion": "Calle Principal",
+  "email": "pedro@example.com",
+  "tipodoc": "T.I",
+  "genero": "Masculino",
+  "acudiente": "Juan López"
+},
+{
+  "_id": {
+    "$oid": "6503439873d0edc346e5d43c"
+  },
+  "nombre": "Sofía",
+  "segundo_nombre": "Isabella",
+  "primer_apellido": "Gómez",
+  "telefono": "555-666-6666",
+  "direccion": "Calle Central",
+  "email": "sofia@example.com",
+  "tipodoc": "D.E",
+  "genero": "Femenino",
+  "acudiente": "Luisa Ramírez"
+},
+{
+  "_id": {
+    "$oid": "6503439873d0edc346e5d43d"
+  },
+  "nombre": "Andrés",
+  "segundo_nombre": "Fernando",
+  "primer_apellido": "Martínez",
+  "telefono": "555-777-7777",
+  "direccion": "Avenida Principal",
+  "email": "andres@example.com",
+  "tipodoc": "C.C",
+  "genero": "Masculino",
+  "acudiente": "Andrés Fernández"
+},
+{
+  "_id": {
+    "$oid": "6503439873d0edc346e5d43e"
+  },
+  "nombre": "María",
+  "segundo_nombre": "Isabella",
+  "primer_apellido": "López",
+  "telefono": "555-888-8888",
+  "direccion": "Carrera Secundaria",
+  "email": "maria@example.com",
+  "tipodoc": "T.I",
+  "genero": "Femenino",
+  "acudiente": "Sofía González"
+},
+{
+  "_id": {
+    "$oid": "6503439873d0edc346e5d43f"
+  },
+  "nombre": "Luis",
+  "segundo_nombre": "Alejandro",
+  "primer_apellido": "González",
+  "telefono": "555-999-9999",
+  "direccion": "Calle del Sol",
+  "email": "luis@example.com",
+  "tipodoc": "D.E",
+  "genero": "Masculino",
+  "acudiente": "Manuel Pérez"
+},
+{
+  "_id": {
+    "$oid": "6503439873d0edc346e5d440"
+  },
+  "nombre": "Ana",
+  "segundo_nombre": "María",
+  "primer_apellido": "Fernández",
+  "telefono": "555-101-0101",
+  "direccion": "Avenida del Sol",
+  "email": "ana@example.com",
+  "tipodoc": "C.C",
+  "genero": "Femenino",
+  "acudiente": "Pedro Rodríguez"
+}]
